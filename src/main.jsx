@@ -9,10 +9,12 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Users from "../src/Components/Users/Users.jsx";
 import UserDetails from "./Components/UserDetails/UserDetails.jsx";
+import NotFound from "./Components/NotFound/NotFound.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "/about",
